@@ -13,7 +13,7 @@ const calculate = (num1, num2, operation) => {
     case '*':
       return num1 * num2;
     default:
-      throw new Error(`Unknown operator: '${operation}'!`)
+      throw new Error(`Unknown operator: '${operation}'!`);
   }
 };
 
@@ -29,5 +29,5 @@ const runCalcRound = () => {
 };
 
 export default () => {
-  runGame(task, runCalcRound)
+  runGame(task, runCalcRound);
 };

@@ -18,5 +18,5 @@ const gcdQuestion = () => {
 };
 
 export default () => {
-  runGame(task, gcdQuestion)
+  runGame(task, gcdQuestion);
 };

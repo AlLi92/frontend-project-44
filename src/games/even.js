@@ -7,9 +7,9 @@ const runEvenRound = () => {
   const question = String(number);
   const answer = isEven(number) ? 'yes' : 'no';
   return { question, answer };
-}
+};
 const task = `Answer "yes" if the number is even, otherwise answer "no".`;
 
 export default () => {
-  runGame(task, runEvenRound)
+  runGame(task, runEvenRound);
 };
