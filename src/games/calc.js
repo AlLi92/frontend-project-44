@@ -16,7 +16,7 @@ const calculate = (num1, num2, operation) => {
       throw new Error(`Unknown operator: '${operation}'!`)
   }
 };
-  
+
 const runCalcRound = () => {
   const lastOperationIndex = operations.length - 1;
   const number1 = getRandomInt(1, 99);
@@ -29,5 +29,5 @@ const runCalcRound = () => {
 };
 
 export default () => {
-  runGame(task, runCalcRound);
+  runGame(task, runCalcRound)
 };

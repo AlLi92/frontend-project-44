@@ -1,5 +1,5 @@
-import runGame from "../index.js";
-import getRandomInt from "../random.js";
+import runGame from '../index.js';
+import getRandomInt from '../random.js';
 
 const task = 'What number is missing in the progression?';
 
@@ -12,7 +12,7 @@ const getProgression = (start, length, step) => {
   }
   return progression;
 };
-  
+
 const getRandomIndex = (progression) => getRandomInt(0, progression.length - 1);
 const progressionQuestion = () => {
   const start = getRandomInt(1, 20);
@@ -25,5 +25,7 @@ const progressionQuestion = () => {
   const question = progression.join(' ');
   return { question, answer };
 };
-  
-export default () => runGame(task, progressionQuestion);
+
+export default () => {
+  runGame(task, progressionQuestion);
+};

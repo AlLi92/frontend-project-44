@@ -11,5 +11,5 @@ const runEvenRound = () => {
 const task = `Answer "yes" if the number is even, otherwise answer "no".`;
 
 export default () => {
-    runGame(task, runEvenRound)
+  runGame(task, runEvenRound)
 };
