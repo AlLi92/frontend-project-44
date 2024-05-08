@@ -5,16 +5,16 @@ const operations = ['+', '-', '*'];
 const task = 'What is the result of the expression?';
 
 const calculate = (num1, num2, operation) => {
-    switch (operation) {
-        case '+':
-            return num1 + num2;
-        case '-':
-            return num1 - num2;
-        case '*':
-            return num1 * num2;
-        default:
-            throw new Error(`Unknown operator: '${operation}'!`)
-    }
+  switch (operation) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`Unknown operator: '${operation}'!`)
+  }
 };
   
 const runCalcRound = () => {
@@ -28,6 +28,6 @@ const runCalcRound = () => {
   return { question, answer };
 };
 
-  export default () => {
-    runGame(task, runCalcRound);
-  };
+export default () => {
+  runGame(task, runCalcRound);
+};
